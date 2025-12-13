@@ -90,14 +90,30 @@
     </div>
     <div id="research">
       <h1>Research</h1>
+
+      <h2>Generative AI</h2>
       <table>
         <tr>
+          <td class="diagram">
+            <img src="asset/image/motionavatar.gif" style="width: 100%;">
+          </td>
+          <td class="abstract">
+            <p style="font-size: 24px;"><a href="https://steve-zeyu-zhang.github.io/MotionAvatar/"><b>Motion Avatar: Generate Human and Animal Avatars with Arbitrary Motion</b></a></p>
+            <p style="font-size: 22px;"><a href="https://bmvc2024.org/"><em><b>BMVC 2024</b></em></a></p>
+            <p>In recent years, creating 3D avatars and motions has garnered significant interest due to applications in film, video games, AR/VR, and human-robot interaction. Current efforts focus on either generating 3D avatars or motion sequences, with integration remaining a challenge. Moreover, extending these techniques to animals is difficult due to inadequate training data. Our paper addresses these gaps with three key contributions. Firstly, we introduce Motion Avatar, an agent-based approach for generating high-quality human and animal avatars with motions from text queries. Secondly, we present an LLM planner that coordinates motion and avatar generation in a customizable Q&A format. Lastly, we offer Zoo-300K, an animal motion dataset with 300,000 text-motion pairs across 65 animal categories, created using our ZooGen pipeline.</p>
+          </td>
+        </tr>
+      </table>
+
+      <h2>Medical and Explainable AI (XAI)</h2>
+        <table>
+          <tr>
           <td class="diagram">
             <img src="asset/image/meddet.svg" style="width: 100%;">
           </td>
           <td class="abstract">
             <p style="font-size: 24px;"><a href="https://steve-zeyu-zhang.github.io/MedDet/"><b>MedDet: Generative Adversarial Distillation for Efficient Cervical Disc Herniation Detection</b></a></p>
-            <p style="font-size: 22px;"><a href=""><em><b>Preprint</b></em></a></p>
+            <p style="font-size: 22px;"><a href="https://ieeebibm.org/BIBM2024/"><em><b>BIBM 2024 Oral</b></em></a></p>
             <p>Cervical disc herniation (CDH) is a common disorder needing expert analysis. Current automated detection methods face challenges: high computational demands and MRI noise. We propose MedDet for efficient detection, leveraging knowledge distillation, generative adversarial training, and nmODE<sup>2</sup>. Our model improves mAP by 5%, reduces parameters by 67.8%, and speeds inference fivefold.</p>
           </td>
         </tr>
@@ -111,7 +127,7 @@
             <p>Medical imaging segmentation, crucial for lesion analysis, has seen advances with transformers in 3D segmentation. Despite their scalability, transformers struggle with local features and complexity. We propose SegStitch, combining transformers with denoising ODE blocks, improving mDSC by up to 11.48% and reducing parameters by 36.7%, promising real-world clinical adaptation.</p>
           </td>
         </tr>
-        <tr>
+          <tr>
           <td class="diagram">
             <img src="asset/image/xlip.svg" style="width: 100%;">
           </td>
@@ -121,17 +137,7 @@
             <p>Vision-and-language pretraining (VLP) in the medical field faces challenges with reconstructing key features due to limited data and using both paired and unpaired data. Our proposed XLIP framework improves learning by introducing attention-masked image modeling (AttMIM) and entity-driven masked language modeling (EntMLM), enhancing medical features. XLIP achieves state-of-the-art performance in classification tasks.</p>
           </td>
         </tr>
-        <tr>
-          <td class="diagram">
-            <img src="asset/image/motionavatar.gif" style="width: 100%;">
-          </td>
-          <td class="abstract">
-            <p style="font-size: 24px;"><a href="https://steve-zeyu-zhang.github.io/MotionAvatar/"><b>Motion Avatar: Generate Human and Animal Avatars with Arbitrary Motion</b></a></p>
-            <p style="font-size: 22px;"><a href="https://bmvc2024.org/"><em><b>BMVC 2024</b></em></a></p>
-            <p>In recent years, creating 3D avatars and motions has garnered significant interest due to applications in film, video games, AR/VR, and human-robot interaction. Current efforts focus on either generating 3D avatars or motion sequences, with integration remaining a challenge. Moreover, extending these techniques to animals is difficult due to inadequate training data. Our paper addresses these gaps with three key contributions. Firstly, we introduce Motion Avatar, an agent-based approach for generating high-quality human and animal avatars with motions from text queries. Secondly, we present an LLM planner that coordinates motion and avatar generation in a customizable Q&A format. Lastly, we offer Zoo-300K, an animal motion dataset with 300,000 text-motion pairs across 65 animal categories, created using our ZooGen pipeline.</p>
-          </td>
-        </tr>
-        <tr>
+          <tr>
           <td class="diagram">
             <iframe src="https://www.youtube.com/embed/N5xhZ9VQIV8?si=itwXgm3ayeYYyyuK" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </td>
@@ -157,7 +163,7 @@
           </td>
           <td class="abstract">
             <p style="font-size: 24px;"><a href="https://github.com/White65534/BHSD"><b>BHSD: A 3D Multi-class Brain Hemorrhage Segmentation Dataset</b></a></p>
-            <p style="font-size: 22px;"><a href="https://sites.google.com/view/mlmi2023"><em><b>MLMI 2023</b></em></a></p>
+            <p style="font-size: 22px;"><a href="https://sites.google.com/view/mlmi2023"><em><b>MICCAI 2023 Workshop MLMI</b></em></a></p>
             <p>Intracranial hemorrhage (ICH) is a pathological condition involving bleeding inside the skull or brain, which can have various causes. Accurate identification, localization, and quantification of ICH are crucial for clinical outcomes. Deep learning techniques are often used in medical image segmentation, but current public ICH datasets do not support multi-class segmentation. To address this, we developed the Brain Hemorrhage Segmentation Dataset (BHSD), a 3D multi-class ICH dataset with 192 volumes having pixel-level annotations and 2200 volumes with slice-level annotations across five ICH categories. We also provide benchmarks using state-of-the-art models for supervised and semi-supervised segmentation tasks on this dataset.</p>
           </td>
         </tr>
@@ -171,7 +177,10 @@
             <p>Diabetes, caused by inadequate insulin production or utilization, inflicts extensive harm. Existing diagnostics are often invasive and costly. Current machine learning models like Classwise k Nearest Neighbor (CkNN) and General Regression Neural Network (GRNN) struggle with imbalanced data. We propose a non-invasive diagnosis method using a Back Propagation Neural Network (BPNN) with batch normalization and data re-sampling for class balancing. This approach improves accuracy, sensitivity, and specificity. Experimental results show 89.81% accuracy on the Pima diabetes dataset, 75.49% on the CDC BRFSS2015 dataset, and 95.28% on the Mesra Diabetes dataset, highlighting the potential of advanced deep learning models for robust diagnosis.</p>
           </td>
         </tr>
-      </table>
+        </table>
+
+
+
   </div>
 
 
@@ -192,22 +201,6 @@
             </div>
           </div>
 
-
-          <div class="person">
-            <img src="asset/avatar/wenbo.jpg">
-            <div class="name"><a href="https://zwbx.github.io/">Wenbo Zhang</a></div>
-            <div class="details">
-              <ul>
-                <li>PhD student at <a href="https://www.adelaide.edu.au/aiml/">AIML</a>, <a href="https://www.adelaide.edu.au/">UoA</a>.</li>
-                <li>MS at <a href="https://en.scu.edu.cn/">Sichuan University</a>.</li>
-                <li>BS at <a href="https://en.scu.edu.cn/">Sichuan University</a>.</li>
-              </ul>
-            </div>
-          </div>
-
-
-          
-
           
 
             <div class="person">
@@ -223,19 +216,6 @@
 
 
               <div class="person">
-                <img src="asset/avatar/shawn.jpeg">
-                <div class="name"><a href="https://www.linkedin.com/in/shuo-chen-7747a7246/">Shuo Chen</a></div>
-                <div class="details">
-                  <ul>
-                    <li>Incoming PhD student at <a href="https://www.sydney.edu.au/">USYD</a>.</li>
-                    <li>BS at <a href="https://www.monash.edu/">Monash University</a>.</li>
-                  </ul>
-                </div>
-              </div>
-
-
-
-              <div class="person">
                 <img src="asset/avatar/danning.jpeg">
                 <div class="name"><a href="https://www.linkedin.com/in/danning-li-448039229/">Danning Li</a></div>
                 <div class="details">
@@ -247,41 +227,12 @@
               </div>
 
 
-
-        </div>
-
-
-        <div class="person-container">
-
-
-          <div class="person">
-            <img src="asset/avatar/akira.jpg">
-            <div class="name"><a href="https://www.linkedin.com/in/akira-zhao/">Akira Zhao</a></div>
-            <div class="details">
-              <ul>
-                <li>Head of Logistics Solution Manager at <a href="https://jd.com/">JD.com</a>.</li>
-                <li>Lead of Global Product Marketing Manager at <a href="https://www.ebay.com/">eBay</a>.</li>
-                <li>Senior Product Marketing Manager at <a href="https://www.ebay.com/">eBay</a>.</li>
-                <li>PhD at <a href="https://www.uts.edu.au/">UTS</a>.</li>
-                  <ul>
-                    <li style="padding-left: 10px"><b style="color: red;">Chancellor's Award Nomination 2024</b>.</li>
-                    <li style="padding-left: 10px"><a href="https://www.mdpi.com/1999-5903/16/6/194"><b style="color: red;"><em>Future Internet</em> Best Paper Award 2026</b></a>.</li>
-                  </ul>
-                <li>MPhil at <a href="https://www.uts.edu.au/">UTS</a>.</li>
-                <li>BA at <a href="https://www.uts.edu.au/">UTS</a>.</li>
-                <li>BA student at <a href="https://en.ruc.edu.cn/">RUC</a>.</li>
-              </ul>
-            </div>
-          </div>
-
-
-
-              <div class="person">
+                            <div class="person">
                 <img src="asset/avatar/zeyu.jpeg">
                 <div class="name"><a href="https://steve-zeyu-zhang.github.io/">Zeyu Zhang</a></div>
                 <div class="details">
                   <ul>
-                    <li>BS student at <a href="https://www.anu.edu.au/">ANU</a>.</li>
+                    <li>BS at <a href="https://www.anu.edu.au/">ANU</a>.</li>
                   </ul>
                 </div>
               </div>
@@ -300,44 +251,15 @@
                 </div>
               </div>
 
-              <div class="person">
-                <img src="asset/avatar/aaron.jpg">
-                <div class="name"><a href="https://www.linkedin.com/in/aaron-berliano-handoko-235406187/">Aaron Berliano Handoko</a></div>
-                <div class="details">
-                  <ul>
-                    <li>MS student at <a href="https://www.sydney.edu.au/">USYD</a>.</li>
-                    <li>BS at <a href="https://www.uksw.edu/">UKSW</a>.</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="person">
-                <img src="asset/avatar/guohui.jpg">
-                <div class="name"><a href="https://github.com/CaiGuoHui123">Guohui Cai</a></div>
-                <div class="details">
-                  <ul>
-                    <li>MS student at <a href="https://english.swun.edu.cn/">Southwest Minzu University</a>.</li>
-                  </ul>
-                </div>
-              </div>
-
 
 
         </div>
 
+
+
         <div class="person-container">
 
-              <div class="person">
-                <img src="asset/avatar/tan.jpg">
-                <div class="name"><a href="https://github.com/goblin327">Shengbo Tan</a></div>
-                <div class="details">
-                  <ul>
-                    <li>MS student at <a href="https://english.swun.edu.cn/">Southwest Minzu University</a>.</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="person">
+                        <div class="person">
                 <img src="asset/avatar/qiyi.jpeg">
                 <div class="name"><a href="https://www.linkedin.com/in/xuyin-q-29672524a/">Xuyin Qi</a></div>
                 <div class="details">
@@ -349,19 +271,7 @@
                 </div>
               </div>
 
-
-              <div class="person">
-                <img src="asset/avatar/zero.jpeg">
-                <div class="name"><a href="https://github.com/ZeroHzzzz">Zero</a></div>
-                <div class="details">
-                  <ul>
-                    <li>BS student at <a href="https://www.gjxy.zjut.edu.cn/">ZJUT</a>.</li>
-                  </ul>
-                </div>
-              </div>
-
-
-              <div class="person">
+                            <div class="person">
                 <img src="asset/avatar/zhiyuan.jpeg">
                 <div class="name"><a href="https://github.com/Tiooo111">Zhiyuan Zhang</a></div>
                 <div class="details">
@@ -371,49 +281,32 @@
                 </div>
               </div>
 
-              
-              <div class="person">
-                <img src="asset/avatar/shiya.jpeg">
-                <div class="name"><a href="https://www.linkedin.com/in/abell-huang/">Shiya Huang</a></div>
+                <div class="person">
+                <img src="asset/avatar/huangting.png">
+                <div class="name"><a href="https://scholar.google.com/citations?user=AMHTHkUAAAAJ&hl=en">Ting Huang</a></div>
                 <div class="details">
                   <ul>
-                    <li>MPhil student at <a href="https://www.adelaide.edu.au/aiml/">AIML</a>, <a href="https://www.adelaide.edu.au/">UoA</a>.</li>
+                    <li>Incoming PhD student at <a href="https://www.nju.edu.cn/en/">NJU</a>.</li>
+                    <li>MS student at <a href="https://en.sues.edu.cn/">SUES</a>.</li>
                   </ul>
                 </div>
               </div>
 
 
-            
+              <div class="person">
+                <img src="asset/avatar/qingxiangliu.jpeg">
+                <div class="name"><a href="https://github.com/AMXalice">Qingxiang Liu</a></div>
+                <div class="details">
+                  <ul>
+                    <li>MS student at <a href="https://en.sues.edu.cn/">SUES</a>.</li>
+                  </ul>
+                </div>
+              </div>
+
+
+
+
         </div>
-
-
-        <div class="person-container">
-
-
-          <div class="person">
-            <img src="asset/avatar/zien.jpeg">
-            <div class="name"><a href="https://www.linkedin.com/in/zi-en-tham-605a40161/">Zi En Tham</a></div>
-            <div class="details">
-              <ul>
-                <li>RA at <a href="https://www.latrobe.edu.au/">La Trobe University</a>.</li>
-                <li>BS at <a href="https://www.uts.edu.au/">UTS</a> (<b style="color: red;">Dean's List 2024</b>).</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="person">
-            <img src="asset/avatar/hanqi.png">
-            <div class="name"><a href="https://www.worldcubeassociation.org/persons/2016QIAO02">Hanqi Qiao</a></div>
-            <div class="details">
-              <ul>
-                <li>BS student at <a href="https://www.bupt.edu.cn/">BUPT</a>.</li>
-              </ul>
-            </div>
-          </div>
-  
-    </div>
-  
-
 
 
     </div>
@@ -550,7 +443,50 @@
           </div>
         </div>
 
+
         <div class="person">
+            <img src="asset/avatar/hanqi.png">
+            <div class="name"><a href="https://www.worldcubeassociation.org/persons/2016QIAO02">Hanqi Qiao</a></div>
+            <div class="details">
+              <ul>
+                <li>BS student at <a href="https://www.bupt.edu.cn/">BUPT</a>.</li>
+              </ul>
+            </div>
+          </div>
+
+                  <div class="person">
+            <img src="asset/avatar/akira.jpg">
+            <div class="name"><a href="https://www.linkedin.com/in/akira-zhao/">Akira Zhao</a></div>
+            <div class="details">
+              <ul>
+                <li>Head of Logistics Solution Manager at <a href="https://jd.com/">JD.com</a>.</li>
+                <li>Lead of Global Product Marketing Manager at <a href="https://www.ebay.com/">eBay</a>.</li>
+                <li>Senior Product Marketing Manager at <a href="https://www.ebay.com/">eBay</a>.</li>
+                <li>PhD at <a href="https://www.uts.edu.au/">UTS</a>.</li>
+                  <ul>
+                    <li style="padding-left: 10px"><b style="color: red;">Chancellor's Award Nomination 2024</b>.</li>
+                    <li style="padding-left: 10px"><a href="https://www.mdpi.com/1999-5903/16/6/194"><b style="color: red;"><em>Future Internet</em> Best Paper Award 2026</b></a>.</li>
+                  </ul>
+                <li>MPhil at <a href="https://www.uts.edu.au/">UTS</a>.</li>
+                <li>BA at <a href="https://www.uts.edu.au/">UTS</a>.</li>
+                <li>BA student at <a href="https://en.ruc.edu.cn/">RUC</a>.</li>
+              </ul>
+            </div>
+          </div>
+
+                    <div class="person">
+            <img src="asset/avatar/zien.jpeg">
+            <div class="name"><a href="https://www.linkedin.com/in/zi-en-tham-605a40161/">Zi En Tham</a></div>
+            <div class="details">
+              <ul>
+                <li>RA at <a href="https://www.latrobe.edu.au/">La Trobe University</a>.</li>
+                <li>BS at <a href="https://www.uts.edu.au/">UTS</a> (<b style="color: red;">Dean's List 2024</b>).</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="person">
           <img src="asset/avatar/kaiqi.jpeg">
           <div class="name"><a href="https://github.com/KaiqiLin">Kaiqi Lin</a></div>
           <div class="details">
@@ -563,12 +499,107 @@
   </div>
 
 
+        <div class="person-container">
+
+          
+          <div class="person">
+            <img src="asset/avatar/wenbo.jpg">
+            <div class="name"><a href="https://zwbx.github.io/">Wenbo Zhang</a></div>
+            <div class="details">
+              <ul>
+                <li>PhD student at <a href="https://www.adelaide.edu.au/aiml/">AIML</a>, <a href="https://www.adelaide.edu.au/">UoA</a>.</li>
+                <li>MS at <a href="https://en.scu.edu.cn/">Sichuan University</a>.</li>
+                <li>BS at <a href="https://en.scu.edu.cn/">Sichuan University</a>.</li>
+              </ul>
+            </div>
+          </div>
+
+
+            <div class="person">
+              <img src="asset/avatar/shawn.jpeg">
+              <div class="name"><a href="https://www.linkedin.com/in/shuo-chen-7747a7246/">Shuo Chen</a></div>
+              <div class="details">
+                <ul>
+                  <li>Incoming PhD student at <a href="https://www.sydney.edu.au/">USYD</a>.</li>
+                  <li>BS at <a href="https://www.monash.edu/">Monash University</a>.</li>
+                </ul>
+              </div>
+            </div>
+
+
+
+            <div class="person">
+                <img src="asset/avatar/aaron.jpg">
+                <div class="name"><a href="https://www.linkedin.com/in/aaron-berliano-handoko-235406187/">Aaron Berliano Handoko</a></div>
+                <div class="details">
+                  <ul>
+                    <li>MS student at <a href="https://www.sydney.edu.au/">USYD</a>.</li>
+                    <li>BS at <a href="https://www.uksw.edu/">UKSW</a>.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="person">
+                <img src="asset/avatar/guohui.jpg">
+                <div class="name"><a href="https://github.com/CaiGuoHui123">Guohui Cai</a></div>
+                <div class="details">
+                  <ul>
+                    <li>MS student at <a href="https://english.swun.edu.cn/">Southwest Minzu University</a>.</li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div class="person">
+                <img src="asset/avatar/tan.jpg">
+                <div class="name"><a href="https://github.com/goblin327">Shengbo Tan</a></div>
+                <div class="details">
+                  <ul>
+                    <li>MS student at <a href="https://english.swun.edu.cn/">Southwest Minzu University</a>.</li>
+                  </ul>
+                </div>
+              </div>
+
+
+        </div>
+
+        
+        <div class="person-container">
+
+
+              <div class="person">
+                <img src="asset/avatar/zero.jpeg">
+                <div class="name"><a href="https://github.com/ZeroHzzzz">Zero</a></div>
+                <div class="details">
+                  <ul>
+                    <li>BS student at <a href="https://www.gjxy.zjut.edu.cn/">ZJUT</a>.</li>
+                  </ul>
+                </div>
+              </div>
+
+              
+              <div class="person">
+                <img src="asset/avatar/shiya.jpeg">
+                <div class="name"><a href="https://www.linkedin.com/in/abell-huang/">Shiya Huang</a></div>
+                <div class="details">
+                  <ul>
+                    <li>MPhil student at <a href="https://www.adelaide.edu.au/aiml/">AIML</a>, <a href="https://www.adelaide.edu.au/">UoA</a>.</li>
+                  </ul>
+                </div>
+              </div>
+
+
+            
+        </div>
+  
+
+
     </div>
 
 
     <div id="contactnew">
         <h1>Contact</h1>
-        <p>Email: <a href="mailto:ai.geeks@groups.outlook.com">ai.geeks@groups.outlook.com</a></p>
+        <p>Email: <a href="mailto:ai.geeks@outlook.com">ai.geeks@outlook.com</a></p>
         <p>Join Us: <a href="https://forms.gle/tLTbETPVvnCjpeJy5">Google Form</a></p>
     </div>
 
